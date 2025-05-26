@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body {
+    background-color: #efeeee;
+    color: #333;
+    line-height: 1.6;
+  }
+  #contenu {
+    position: relative;
+    top: 250px;
+    z-index: 1;
+  }
+/*en tête*/
+header {
+  margin-bottom: 200px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  position:fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  background-image: url(img/im1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s;
+}
+header:hover {
+  transform: translatey(-10px);
+}
+header figure img {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+}
+header figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 5px;
+  top: 10px;
+}
+/*img*/
+header h1 {
+  font-size: 4em;
+  color: #ffffff;
+}
+/*Nav*/
+header nav p {
+  display: inline;
+}
+nav p {
+  margin-right: 3%;
+  font-size: 25px;
+  transition: transform 0.3s; 
+}
+nav p a{
+  color:whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav p a:visited {
+  color:whitesmoke;
+}
+nav p a:hover{
+    font-weight: 400;
+    border-right: 2px solid white;
+    text-decoration: underline double;
+}
+.quiz {
+  border-right: 2px solid white;
+  text-decoration: underline double;
+}
+/*section*/
+/*introduction*/
+.intro {
+  border-radius: 20px 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 80%;
+  padding: 0;
+  box-shadow: 2px 2px 10px #1c2b32;
+  padding-bottom: 1px;
+}
+.intro h2 {
+  font-size: 3em;
+  color: #000000;
+  font-family:vogue;
+  margin-top: 0px;
+}
+.intro p {
+  font-size: 1.5em;
+  color: #000000;
+  font-family:'Times New Roman', Times, serif;
+}
+span a {
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #1c2b32;
+  color: #dfe0da;
+  padding: 5px;
+  box-shadow: 2px 2px 2px rgb(201, 196, 196);
+}
+span a:hover {
+  background-color: #dfe0da;
+  color: #1c2b32;
+  box-shadow: 2px 2px 2px #6c909c;
+}
+/*les question*/
+#question {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: flex-start;
+}
+fieldset {
+  width: 30%;
+  height: 228.75px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(136, 130, 130, 0.1);
+  margin-top: 20px;
+  border-left: none;
+  border-right: none;
+  background-color: #f4f5f7;
+  transition: transform 0.5s;
+} 
+.f1:hover {
+  background-image: url(img/icon/new/effet.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.f2:hover {
+  background-image: url(img/icon/new/oce.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.f3:hover {
+  background-image: url(img/icon/new/deforestation_5421051.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.f4:hover {
+  background-image: url(img/icon/new/renewable-energy_18007259.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.f5:hover {
+  background-image: url(img/icon/new/junk_3506422.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.q {
+  font-size: 1em;
+}
+legend {
+  text-decoration: underline;
+  color: #0a3b53;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+legend:hover {
+  color: white;
+}
+fieldset:hover {
+  background-color: #0A3B53;
+  color: white;
+  box-shadow: 0 4px 20px rgba(114, 101, 101, 0.491);
+  transform: translateX(10px);
+}
+.submit {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+#submit {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 90%;
+  border-radius: 30px;
+  background-color: #1c2b32;
+  color: #dfe0da;
+  padding: 5px;
+  box-shadow: 2px 2px 2px rgb(201, 196, 196);
+  transition: transform 0.5s;
+}
+#submit:hover {
+  background-color: #dfe0da;
+  color: #1c2b32;
+  box-shadow: 2px 2px 2px #6c909c;
+  font-size: 80%;
+}
+form {
+  border-bottom: 1px solid #1c2b32;
+  border-radius: 10px 10px;
+  width: 95%;
+  margin: 0 auto;
+  box-shadow: 2px 2px 10px rgb(201, 196, 196);
+  margin-top: 20px ;
+}
+/*S2*/
+.s2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 98%;
+  padding: 10px;
+}
+.s2 div {
+  box-shadow: 2px 2px 10px rgb(201, 196, 196);
+  border-radius: 20px;
+  padding: 10px;
+}
+div h3 {
+  text-align: center;
+  text-decoration: underline rgb(34, 49, 34) 5px;
+}
+.reponse {
+  box-shadow: 1px 1px 10px rgb(201, 196, 196);
+  width: 90%;
+  border-radius: 20px;
+  font-size: 1.5em;
+  padding-left: 10px;
+}
+.res {
+  color: white;
+  border: 1px solid white;
+  margin: 5px auto;
+}
+.rep {
+  background-color: white;
+  color: #0A3B53;
+  border: 1px solid #0a3b53;
+  margin: 5px auto;
+}
+.resultat {
+  width: 39%;
+  border-left: 2px solid black;
+  border-right: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.p1 {
+  background-color: red;
+}
+.p2 {
+  background-color: green;
+}
+.p3 {
+  background-color: green;
+}
+.p4 {
+  background-color: red;
+}
+.p5 {
+  background-color: green;
+}
+.rp {
+  width: 39%;
+  border-left: none;
+  border-right: none;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+.ap {
+  width: 19%;
+  border-left: none;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  text-align: center;
+}
+.text {
+  font-weight: 200;
+  text-align: center;
+  font-size: 2em;
+}
+.score {
+  font-weight: bold;
+}
+.p8 a {
+  text-decoration: none;
+  border-radius: 30px;
+  background-color: #1c2b32;
+  color: #dfe0da;
+  padding: 5px;
+  box-shadow: 2px 2px 2px rgb(201, 196, 196);
+}
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 10px;
+}
+.fig1 img {
+  width: 180px;
+  height: 180px;
+}
+/*footer*/
+footer {
+    background: #101111ff;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+footer p {
+    margin: 0;
+}
+/*footer*/
+footer {
+    background: #101111ff;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+footer img {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+}
+footer p {
+    margin: 0;
+}

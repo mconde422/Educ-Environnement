@@ -1,0 +1,95 @@
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  body {
+    background-color: #efeeee;
+    color: #333;
+    line-height: 1.6;
+  }
+  #contenu {
+    position: relative;
+    top: 250px;
+    z-index: 1;
+  }
+/*en tête*/
+header {
+  margin-bottom: 200px;
+  text-align: center;
+  border-radius: 0 0 20px 20px;
+  position:fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 2;
+  background-image: url(img/im1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: transform 0.3s;
+}
+header:hover {
+  transform: translatey(-10px);
+}
+header figure img {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  margin: 0;
+}
+header figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  left: 5px;
+  top: 10px;
+}
+/*img*/
+header h1 {
+  font-size: 4em;
+  color: #ffffff;
+}
+/*Nav*/
+header nav p {
+  display: inline;
+}
+nav p {
+  margin-right: 3%;
+  font-size: 25px;
+  transition: transform 0.3s; 
+}
+nav p a{
+  color:whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav p a:visited {
+  color:whitesmoke;
+}
+nav p a:hover{
+    font-weight: 400;
+    border-right: 2px solid white;
+    text-decoration: underline double;
+}
+.article {
+  border-right: 2px solid white;
+  text-decoration: underline double;
+}
+/*footer*/
+footer {
+    background: #101111ff;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+}
+footer img {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    margin: 0;
+}
+footer p {
+    margin: 0;
+}
