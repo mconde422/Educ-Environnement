@@ -219,4 +219,121 @@ footer img {
 footer p {
     margin: 0;
 }
-/*EN TETE*/           
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  #contenu {
+    top: 125px;
+    
+  }
+  nav p {
+    font-size: 0.8em;
+    display: block;
+    margin: 10px 0;
+  }
+  .bloc_1 {
+    font-size: 1em;
+    padding: 0.5em;
+  }
+  .objectif, .actualite, .deforestation, .global_goal, .feux_de_brousse {
+    width: 90% !important;
+    margin: 1em auto;
+  }
+  .section_2 {
+    margin: 0;
+    padding: 0;
+    
+  }
+.importance {
+    width: 100%;
+    box-shadow: 0;
+}
+  #email {
+    width: 100%;
+    font-size: 1em;
+    height: 25px;
+    margin-bottom: 5px;
+  }
+  button, #email {
+    width: 50%;
+    font-size: 0.5em;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+   header h1 {
+    font-size: 2em;
+  }
+  #contenu {
+    top: 125px;
+    
+  }
+  nav p {
+    font-size: 0.8em;
+    display: block;
+    margin: 10px 0;
+  }
+  .bloc_1 {
+    font-size: 1.2em;
+  }
+  .objectif, .actualite {
+    width: 90% !important;
+    margin: 1em auto;
+  }
+  .importance, .deforestation, .global_goal, .feux_de_brousse {
+    width: 49% !important;
+    margin: 1em auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  #contenu {
+    top: 170px;
+    
+  }
+  nav p {
+    font-size: 1.5em;
+    display: block;
+    margin: 10px 0;
+  }
+  .bloc_1 {
+    font-size: 1.3em;
+  }
+  .objectif, .actualite {
+    width: 80%;
+    margin: 1em auto;
+  }
+  .importance, .deforestation, .global_goal, .feux_de_brousse {
+    width: 80%;
+    margin: 1em auto;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1279px) {
+  header h1 {
+    font-size: 3.5em;
+  }
+  nav p {
+    font-size: 1.8em;
+  }
+}
+@media (min-width: 1280px) {
+  header h1 {
+    font-size: 4em;
+  }
+  nav p {
+    font-size: 2em;
+  }
+  .bloc_1 {
+    font-size: 1.5em;
+  }
+  .objectif, .actualite {
+    width: 70%;
+    margin: 1em auto;
+  }
+  .importance, .deforestation, .global_goal, .feux_de_brousse {
+    width: 70%;
+    margin: 1em auto;
+  }
+}        

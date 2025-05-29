@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-html, body {
+html, body { 
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -126,7 +126,6 @@ span a:hover {
 }
 fieldset {
   width: 30%;
-  height: 228.75px;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(136, 130, 130, 0.1);
   margin-top: 20px;
@@ -339,4 +338,123 @@ footer img {
 }
 footer p {
     margin: 0;
+}
+
+/* Écrans très petits (smartphones) : max-width 480px */ 
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  #contenu {
+    top: 125px;
+    
+  }
+  nav p {
+    font-size: 0.8em;
+    display: block;
+    margin: 10px 0;
+  }
+  .intro h2 {
+    font-size: 1.5em;
+  }
+  .intro p, .q, legend {
+    font-size: 1em;
+  }
+  fieldset {
+    width: 90%;
+  }
+  .s2 {
+    flex-direction: column;
+  }
+  .resultat, .rp, .ap {
+    width: 100%;
+    border: none;
+    border-top: 1px solid black;
+  }
+}
+
+/* Petits appareils (mobiles grands) : 481px à 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+  header h1 {
+    font-size: 2em;
+  }
+  #contenu {
+    top: 125px;
+    
+  }
+  nav p {
+    font-size: 0.8em;
+    display: block;
+    margin: 10px 0;
+  }
+  .intro h2 {
+    font-size: 2em;
+  }
+  .intro p, .q, legend {
+    font-size: 1.2em;
+  }
+  fieldset {
+    width: 80%;
+  }
+  .s2 {
+    flex-direction: column;
+  }
+  .resultat, .rp, .ap {
+    width: 100%;
+    border: none;
+    border-top: 1px solid black;
+  }
+}
+
+/* Tablettes : 768px à 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+  #contenu {
+    top: 170px;
+    
+  }
+  nav p {
+    font-size: 1.5em;
+    display: block;
+    margin: 10px 0;
+  }
+  .intro h2 {
+    font-size: 2.5em;
+  }
+  .intro p, .q, legend {
+    font-size: 1.3em;
+  }
+  fieldset {
+    width: 45%;
+  }
+  .s2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .resultat, .rp, .ap {
+    width: 100%;
+  }
+}
+
+/* Ordinateurs portables : 1025px à 1279px */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  fieldset {
+    width: 35%;
+  }
+  .intro h2 {
+    font-size: 2.8em;
+  }
+}
+
+/* Grands écrans : min-width 1280px */
+@media (min-width: 1280px) {
+  fieldset {
+    width: 30%;
+  }
+  .intro h2 {
+    font-size: 3em;
+  }
 }
