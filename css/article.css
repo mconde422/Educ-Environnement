@@ -206,22 +206,6 @@ img{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*footer*/
 footer {
     background: #101111ff;
@@ -237,4 +221,146 @@ footer img {
 }
 footer p {
     margin: 0;
+}
+
+/* ===================== Écrans très petits (max 480px) ===================== */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  nav p {
+    display: block;
+    font-size: 18px;
+    margin: 5px 0;
+  }
+
+  .section-1 {
+    flex-direction: column;
+  }
+
+  .s1d1, .s1d2, .s1d3 {
+    width: 90%;
+    height: auto;
+  }
+
+  .foret img, .eau img, .savane img, .rc img, .faune img {
+    width: 100%;
+    height: auto;
+  }
+
+  .foret p, .eau p, .savane p, .rc p, .faune p {
+    width: 100%;
+  }
+}
+
+/* ===================== Mobiles grands (481px à 767px) ===================== */
+@media (min-width: 481px) and (max-width: 767px) {
+  header h1 {
+    font-size: 2.5em;
+  }
+
+  nav p {
+    font-size: 20px;
+  }
+
+  .section-1 {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .s1d1, .s1d2, .s1d3 {
+    width: 90%;
+    height: auto;
+  }
+
+  .foret img, .eau img, .savane img, .rc img, .faune img {
+    width: 100%;
+    height: auto;
+  }
+
+  .foret p, .eau p, .savane p, .rc p, .faune p {
+    width: 100%;
+  }
+}
+
+/* ===================== Tablettes (768px à 1024px) ===================== */
+@media (min-width: 768px) and (max-width: 1024px) {
+  header h1 {
+    font-size: 3em;
+  }
+
+  nav p {
+    font-size: 22px;
+  }
+
+  .s1d1, .s1d2, .s1d3 {
+    width: 90%;
+    height: auto;
+  }
+
+  .section-1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .s1d1, .s1d2, .s1d3 {
+    width: 100%;
+  }
+
+  .foret img, .eau img, .savane img, .rc img, .faune img {
+    width: 100%;
+    height: auto;
+  }
+
+  .foret p, .eau p, .savane p, .rc p, .faune p {
+    width: 100%;
+  }
+}
+
+/* ===================== Ordinateurs portables (1025px à 1279px) ===================== */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  .s1d1 {
+    width: 30%;
+  }
+
+  .s1d2 {
+    width: 50%;
+  }
+
+  .s1d3 {
+    width: 18%;
+  }
+
+  .foret img, .eau img, .savane img, .rc img, .faune img {
+    width: 48%;
+  }
+
+  .foret p, .eau p, .savane p, .rc p, .faune p {
+    width: 48%;
+  }
+}
+
+/* ===================== Grands écrans (min 1280px) ===================== */
+@media (min-width: 1280px) {
+  .s1d1 {
+    width: 27%;
+  }
+
+  .s1d2 {
+    width: 45%;
+  }
+
+  .s1d3 {
+    width: 17%;
+  }
+
+  .foret img, .eau img, .savane img, .rc img, .faune img {
+    width: 50%;
+  }
+
+  .foret p, .eau p, .savane p, .rc p, .faune p {
+    width: 30%;
+  }
 }
